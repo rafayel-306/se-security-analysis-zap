@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<context>
+  <name>TestContext</name>
+  <description>用于 ZAP 测试的上下文</description>
+  <inScope>true</inScope>
+  <urls>
+    <url>http://localhost/dvwa/.*</url>
+    <url>http://demo.testfire.net/.*</url>
+  </urls>
+  <tech>DB</tech>
+  <tech>OS</tech>
+  <tech>Web</tech>
+  <tech>Language</tech>
+  <excludedParameters/>
+  <authentication>
+    <type>formBasedAuthentication</type>
+    <loginUrl>http://localhost/dvwa/login.php</loginUrl>
+    <loginRequestData>username={%username%}&amp;password={%password%}&amp;Login=Login</loginRequestData>
+    <loggedInIndicator>index.php</loggedInIndicator>
+  </authentication>
+</context>
