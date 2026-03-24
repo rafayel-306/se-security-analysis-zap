@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+  <policy>Default Policy</policy>
+  <scanners>
+    <scanner id="40012" name="Cross Site Scripting (Reflected)" enabled="true" threshold="MEDIUM" strength="MEDIUM"/>
+    <scanner id="40014" name="Cross Site Scripting (Persistent)" enabled="true" threshold="MEDIUM" strength="MEDIUM"/>
+    <scanner id="40018" name="SQL Injection" enabled="true" threshold="MEDIUM" strength="MEDIUM"/>
+    <scanner id="40019" name="SQL Injection (MySQL)" enabled="true" threshold="MEDIUM" strength="MEDIUM"/>
+    <scanner id="40020" name="SQL Injection (Oracle)" enabled="false"/>
+    <scanner id="40021" name="SQL Injection (PostgreSQL)" enabled="false"/>
+    <scanner id="40022" name="Command Injection" enabled="true" threshold="HIGH" strength="MEDIUM"/>
+    <scanner id="40024" name="Directory Browsing" enabled="true" threshold="LOW"/>
+  </scanners>
+</configuration>
